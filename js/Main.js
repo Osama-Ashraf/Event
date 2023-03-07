@@ -44,5 +44,26 @@ textArea.keyup(()=>{
 });
 
 
+const eventDate = {
+    day: 25,
+    hour: 20 //8pm
+}
+
+setInterval(getRemainingDate, 1000);
+
+function getRemainingDate(){
+    const today = new Date();
+    $('#days').text(eventDate.day-today.getDate())
+    $('#hours').text(eventDate.hour-today.getHours()-1)
+    $('#minutes').text(60-today.getMinutes())
+    $('#seconds').text(60-today.getSeconds())
+}
+
+
+
+
+
+
+
 
 

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-   
+
 <head>
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link href="css/fontawesome.min.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
-   <title>Event</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Event</title>
 </head>
 
 <body>
-   <section id="event">
+    <section id="event">
        <div class="eventOverlay">
            <div id="mySidenav" class="sidenav">
                <a class="closebtn">×</a>
@@ -25,13 +25,9 @@
                <span style="font-size:30px;cursor:pointer">☰ open</span>
            </div>
        </div>
-   </section>
+    </section>
 
-   
-
-   <!-- ------------------------------------- ACCORDION ------------------------------------------- -->
-
-   <section id="singers" class="text-center ">
+    <section id="singers" class="text-center ">
 
        <h3>Singer one</h3>
        <div style="display: block;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -76,97 +72,75 @@
            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
            ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
        </div>
-   </section>
+    </section>
 
+    <section id="countsec" class="py-5">
+        <div class="overlay">
+            <div class="container text-center d-flex">
 
-   
-   <section id="countsec" class="py-5">
-       <div class="overlay">
-           <div class="container text-center d-flex">
+                <div class="col-md-3 me-3">
+                    <div class="time"><h3><span id="days"></span> D</h3></div>
+                </div>
 
-               <div class="col-md-3 me-3">
-                   <div id="days" class="tim"><h3>27 D</h3></div>
-               </div>
+                <div class="col-md-3 me-3">
+                    <div class="time"><h3><span id="hours"></span> h</h3></div>
+                </div>
+                <div class="col-md-3 me-3">
+                    <div class="time"><h3><span id="minutes"></span> m</h3></div>
+                </div>
 
-               <div class="col-md-3 me-3">
-                   <div id="hours" class="tim"><h3>08 h</h3></div>
-               </div>
-               <div class="col-md-3 me-3">
-                   <div id="minutes" class="tim"><h3>59 m</h3></div>
-               </div>
+                <div class="col-md-3 ">
+                    <div class="time"><h3><span id="seconds"></span> s</h3></div>
+                </div>
 
-               <div class="col-md-3 ">
-                   <div id="seconds" class="tim"><h3>31 s</h3></div>
-               </div>
+            </div>
+        </div>
+    </section>
 
-           </div>
-       </div>
-   </section>
-   
-   
-   <section id="hire-me">
+    <section id="hire-me">
+        <div class="container">
+            <div class="head">
+                <h2>Join Us</h2>
+                <p class="text-left pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="row text-left">
+                <div class="col-md-6">
+                    <div class="con-info">
+                        <h3><strong>CONTACT INFO</strong></h3>
+                        <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.
+                        </p>
+                        <div class="icons">
+                            <p><i class="fa fa-map-marker"></i> New Street 22545, Nexa Road, New York City, USA</p>
+                            <p class="red"><i class="fa fa-envelope"></i> hello@uigrid.com</p>
+                            <p><i class="fa fa-phone"></i> 001-000-000-000</p>
+                        </div>
+                        <div class="con-social">
+                            <i class="fa fa-facebook fa-lg"></i>
+                            <i class="fa fa-twitter fa-lg"></i>
+                            <i class="fa fa-google-plus fa-lg"></i>
+                            <i class="fa fa-github fa-lg"></i>
+                            <i class="fa fa-behance fa-lg"></i>
+                            <i class="fa fa-dribbble fa-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <input class="form-control input-lg" type="text" placeholder="Enter Name">
+                        <input class="form-control input-lg" type="email" placeholder="Enter Email">
+                        <textarea class="form-control input-lg" placeholder="Enter Message"></textarea>
+                        <span id="char">100</span> Characyer Reamining
+                        <button style="display:block;margin-top:20px" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-       <div class="container">
-
-           <div class="head">
-               <h2>Join Us</h2>
-               <p class="text-left pb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-           </div>
-
-           <div class="row text-left">
-
-               <div class="col-md-6">
-
-                   <div class="con-info">
-
-                       <h3><strong>CONTACT INFO</strong></h3>
-                       <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                           Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.
-
-                       </p>
-
-                       <div class="icons">
-                           <p><i class="fa fa-map-marker"></i> New Street 22545, Nexa Road, New York City, USA</p>
-
-                           <p class="red"><i class="fa fa-envelope"></i> hello@uigrid.com</p>
-                           <p><i class="fa fa-phone"></i> 001-000-000-000</p>
-                       </div>
-
-
-                       <div class="con-social">
-
-                           <i class="fa fa-facebook fa-lg"></i>
-                           <i class="fa fa-twitter fa-lg"></i>
-                           <i class="fa fa-google-plus fa-lg"></i>
-                           <i class="fa fa-github fa-lg"></i>
-                           <i class="fa fa-behance fa-lg"></i>
-                           <i class="fa fa-dribbble fa-lg"></i>
-
-                       </div>
-
-                   </div>
-
-               </div>
-
-               <div class="col-md-6">
-
-                   <form>
-                       <input class="form-control input-lg" type="text" placeholder="Enter Name">
-                       <input class="form-control input-lg" type="email" placeholder="Enter Email">
-                       <textarea class="form-control input-lg" placeholder="Enter Message"></textarea>
-                       <span id="char">100</span> Characyer Reamining
-                       <button style="display:block;margin-top:20px" class="btn">Send Message</button>
-                   </form>
-
-               </div>
-
-           </div>
-       </div>
-   </section>
-
-   <script src="js/jquery-3.6.3.min.js"></script>
-   <script src="js/bootstrap.bundle.js"></script>
-   <script src="js/Main.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/Main.js"></script>
 
 
 </body>
