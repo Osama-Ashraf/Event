@@ -45,19 +45,60 @@ textArea.keyup(()=>{
 
 
 const eventDate = {
-    day: 25,
-    hour: 20 //8pm
+    month:3,
+    day: 10,
+    hour: 22 //8pm
 }
 
 setInterval(getRemainingDate, 1000);
 
 function getRemainingDate(){
     const today = new Date();
-    $('#days').text(eventDate.day-today.getDate())
-    $('#hours').text(eventDate.hour-today.getHours()-1)
-    $('#minutes').text(60-today.getMinutes())
-    $('#seconds').text(60-today.getSeconds())
-}
+    let remainingDays , remainingHours ,remainingMinutes ,remainingSeconds;
+    if(today.getMonth()+1 == eventDate.month & today.getDate() == eventDate.day){
+        remainingDays = 0;
+        if(today.getHours() == eventDate.hour){
+            
+            remainingHours =0;
+            remainingMinutes = 60-today.getMinutes();
+            remainingSeconds = 60-today.getSeconds();
+        }
+        else if(today.getHours() < eventDate.hour){
+            console.log('55');
+            remainingHours = eventDate.hour - today.getHours();
+            remainingMinutes = 60-today.getMinutes();
+            remainingSeconds = 60-today.getSeconds();
+        }
+
+        else{
+            remainingMinutes = 0;
+            remainingSeconds = 0;
+            remainingHours = 0;
+        }
+    }
+    else{
+        remainingMinutes = 60-today.getMinutes();
+        remainingSeconds = 60-today.getSeconds();
+        remainingHours = eventDate.hour - today.getHours();
+
+        //if(today.getHours() > eventDate.day)
+        if(today.getMonth()+1 < eventDate.month){
+            remainingDays = (30-today.getDate())+eventDate.day;
+            console.log(30-today.getDate());
+        }
+        else{
+            remainingDays = eventDate.day-today.getDate();
+            
+        }
+    }
+    
+
+
+    $('#days').text(remainingDays)
+    $('#hours').text(remainingHours);
+    $('#minutes').text(remainingMinutes)
+    $('#seconds').text(remainingSeconds)
+} 
 
 
 
