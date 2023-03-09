@@ -45,9 +45,9 @@ textArea.keyup(()=>{
 
 
 const eventDate = {
-    month:3,
-    day: 10,
-    hour: 23 //8pm
+    month:5,
+    day: 18,
+    hour: 22 //8pm
 }
 
 setInterval(getRemainingDate, 1000);
@@ -86,7 +86,6 @@ function getRemainingDate(){
         }
         if(today.getMonth()+1 < eventDate.month){
             remainingDays = (30-today.getDate())+eventDate.day;
-            console.log(30-today.getDate());
         }
         else{
             remainingDays = eventDate.day-today.getDate();

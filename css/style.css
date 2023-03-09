@@ -204,3 +204,8 @@
   text-transform: uppercase;
 }
 
+.con-social i:hover{
+  background-color: #D62E33;
+  color: white;
+}
+
